@@ -20,8 +20,6 @@ from unsplash.auth import Auth
 def load_credentials(file):
     with open(file, 'r') as json_file:
         return json.load(json_file)
-    raise FileNotFoundError(os.strerror(
-        "Credentials file could not be loaded: "), file)
 
 
 def download_image(api, url):
