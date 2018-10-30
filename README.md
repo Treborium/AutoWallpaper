@@ -17,3 +17,13 @@ And then add something like this to execute the job once a day at 1 p.m.:
 ```
 0 13 * * * python3 /path/to/autowallpaper.py
 ```
+
+You can also just call the script from the console:
+```
+python3 /path/to/autowallpaper.py
+```
+
+You can specify the image category by passing a comma separated list as an argument to the script:
+```
+python3 /path/to/autowallpaper.py "landscape,winter,night"
+``` 
