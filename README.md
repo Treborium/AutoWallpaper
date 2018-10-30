@@ -1,6 +1,9 @@
 # Auto Wallpaper
 
-<div style="text-align:center"><img src ="https://source.unsplash.com/featured/720x480?landscape" /></div>
+
+<p align="center">
+  <img src="https://source.unsplash.com/featured/720x480?landscape">
+</p>
 
 Auto wallpaper is a little python script that fetches and applies a new random wallpaper from unsplash.
 
