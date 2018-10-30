@@ -4,7 +4,6 @@
     automatically change the background for gnome based window managers.
 """
 
-import json
 import os
 import subprocess
 import urllib.request
