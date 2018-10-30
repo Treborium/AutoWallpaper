@@ -10,17 +10,17 @@ import subprocess
 import urllib.request
 
 URL = "https://source.unsplash.com/featured/2556x1600?landscape"
+WORKING_DIRECTORY = os.path.dirname(os.path.abspath(__file__))
 
 
 def download_image(url):
     file_name = "image.jpg"
-    urllib.request.urlretrieve(url, file_name)
+    urllib.request.urlretrieve(url, WORKING_DIRECTORY + "/" + file_name)
     return file_name
 
 
 def set_image_as_wallpaper(file_name):
-    working_directory = os.path.dirname(os.path.abspath(__file__))
-    subprocess.run(f"gsettings set org.gnome.desktop.background picture-uri file:///{working_directory}/{file_name}".split(" "))
+    subprocess.run(f"gsettings set org.gnome.desktop.background picture-uri file:///{WORKING_DIRECTORY}/{file_name}".split(" "))
     print("Wallpaper changed!")
 
 
