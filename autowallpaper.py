@@ -1,8 +1,7 @@
 #!/usr/bin/env python3.7
 
 """
-    Python script to automatically change the background
-    for gnome based window managers.
+    automatically change the background for gnome based window managers.
 
     Images are fetched from unsplash via this library:
     https://github.com/yakupadakli/python-unsplash
